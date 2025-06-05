@@ -1,0 +1,512 @@
+/* ✅ GENERAL BODY */
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ✅ NAVBAR STYLES */
+.clean-navbar {
+  background-color: #000;
+  padding: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-img {
+  height: 105px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+.auth-btn {
+  background-color: #00ffff;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 8px 0 0 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.auth-btn:hover {
+  background-color: #02e2e2;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* ✅ LOGO LINK TOP-LEFT FOR AUTH PAGES */
+.logo-top-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+/* ✅ LOGIN / REGISTER / FORGOT PAGE STYLES */
+.auth-container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.auth-box {
+  width: 350px;
+  padding: 2rem;
+  background-color: #111;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.neon-border {
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #000, #000) padding-box,
+              linear-gradient(135deg, #ffc107, #00ffff) border-box;
+}
+
+.neon-border.cyan-yellow {
+  background: linear-gradient(135deg, #000, #000) padding-box,
+              linear-gradient(135deg, #00ffff, #ffc107) border-box;
+}
+
+.neon-border.teal-gold {
+  background: linear-gradient(135deg, #000, #000) padding-box,
+              linear-gradient(135deg, #00ffff, #fcd12a) border-box;
+}
+
+/* ✅ FORM STYLES */
+.neon-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  color: white;
+  border-radius: 0;
+}
+
+.neon-input:focus {
+  box-shadow: none;
+  border-color: #00ffff;
+}
+
+label {
+  color: #ccc;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.input-icon input {
+  padding-left: 30px;
+}
+
+.neon-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ffc107;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.neon-button:hover {
+  background-color: #ffc107;
+  color: black;
+  box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107;
+}
+
+.small-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.small-links a {
+  color: #00ffff;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.small-links a:hover {
+  text-decoration: underline;
+}
+/* footer */.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding-top: 40px;
+  border-top: 2px solid #111;
+}
+
+.footer-logo {
+  height: 105px;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  margin-right: 12px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #00ffff;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #00ffff;
+}
+
+.footer-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-list a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-list a:hover {
+  color: #00ffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  font-size: 13px;
+  color: #888;
+  margin-top: 20px;
+}
+/* ✅ LOGIN / REGISTER / FORGOT PAGE STYLES */
+.auth-container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 20px; /* ✅ Added padding for small screen spacing */
+}
+
+.auth-box {
+  width: 350px;
+  padding: 2rem;
+  background-color: #111;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  color: white; /* ✅ Ensure text inside box is white */
+}
+
+/* ✅ Login Title Style (ensure it's always visible) */
+.auth-box h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ✅ NEON BORDER VARIANTS */
+.neon-border {
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #000, #000) padding-box,
+              linear-gradient(135deg, #ffc107, #00ffff) border-box;
+}
+
+.neon-border.cyan-yellow {
+  background: linear-gradient(135deg, #000, #000) padding-box,
+              linear-gradient(135deg, #00ffff, #ffc107) border-box;
+}
+
+.neon-border.teal-gold {
+  background: linear-gradient(135deg, #000, #000) padding-box,
+              linear-gradient(135deg, #00ffff, #fcd12a) border-box;
+}
+
+/* ✅ FORM STYLES */
+.neon-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  color: white;
+  border-radius: 0;
+  padding-left: 32px; /* ✅ Match icon spacing */
+  font-size: 15px;
+}
+
+.neon-input:focus {
+  box-shadow: none;
+  border-color: #00ffff;
+  outline: none;
+}
+
+label {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* ✅ Input Icon Container */
+.input-icon {
+  position: relative;
+}
+
+/* ✅ Input Icon Styling */
+.input-icon .icon {
+  position: absolute;
+  left: 8px;
+  top: 80%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.input-icon input {
+  padding-left: 32px;
+}
+
+/* ✅ LOGIN BUTTON */
+.neon-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ffc107;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.neon-button:hover {
+  background-color: #ffc107;
+  color: black;
+  box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107;
+}
+
+/* ✅ SMALL LINKS */
+.small-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.small-links a {
+  color: #00ffff;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.small-links a:hover {
+  text-decoration: underline;
+}
+/* ✅ BLOG PAGE */
+.blog-list-page {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 30px 60px;
+}
+
+.blog-list-header h2 {
+  font-size: 32px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.blog-card {
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);
+  transition: 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 0 15px rgba(0,255,255,0.3);
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-date {
+  color: #00ffff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.blog-excerpt {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* ✅ BLOG DETAIL PAGE */
+.blog-detail-page {
+  background-color: #000;
+  color: white;
+  padding: 30px;
+}
+
+.blog-detail-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-detail-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+.blog-detail-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ccc;
+}
+/* ✅ WIDE CREATE BLOG BOX */
+.wide-auth-box {
+  width: 80%;
+  max-width: 900px;
+}
+/* ✅ HOME PAGE STYLES */
+.home-page-container {
+  background-color: #000;
+  color: #00ffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center; /* ✅ Ensures all child text centers properly */
+}
+
+
+.home-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.home-subtext {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #ccc;
+  max-width: 600px;
+}
+/* ✅ Home Page Icon Style */
+/* ✅ Home Page Icon Style - Centered with Heading */
+.home-icon {
+  font-size: 60px;
+  color: #00ffff;
+  margin-bottom: 30px; /* reduced spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ✅ Wrap icon for better centering */
+.home-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home-icon {
+  font-size: 60px;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
